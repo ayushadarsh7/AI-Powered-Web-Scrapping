@@ -21,9 +21,9 @@ To utilize local models, ensure you have [Ollama](https://ollama.com/) installed
 ### IPyWidgets for Web Scraping Optimization
 
 To facilitate a user-friendly and efficient web scraping experience, I have integrated IPyWidgets into the ScrapeGraphAI library. This integration allows users to interact with the scraping tool through a graphical interface. Users can specify:
-- The number of websites they wish to scrape: This feature helps in managing the scope of the scraping task, ensuring that users can scale their scraping efforts according to their needs.
-- Input URLs: Users can easily input multiple URLs from which data needs to be scraped. This flexibility ensures that diverse sources can be targeted within a single scraping session.
-- Provide a prompt: Users can enter a specific prompt that guides the scraping process, ensuring that the output is relevant and tailored to their requirements.
+- **The number of websites they wish to scrape:** This feature helps in managing the scope of the scraping task, ensuring that users can scale their scraping efforts according to their needs.
+- **Input URLs:** Users can easily input multiple URLs from which data needs to be scraped. This flexibility ensures that diverse sources can be targeted within a single scraping session.
+- **Provide a prompt:** Users can enter a specific prompt that guides the scraping process, ensuring that the output is relevant and tailored to their requirements.
 
 The generated output, based on the given prompt, will be efficiently produced and displayed to the user, enhancing the overall usability and effectiveness of the web scraping process.
 
