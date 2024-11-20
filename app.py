@@ -12,12 +12,12 @@ nest_asyncio.apply()
 # Configuration for the SmartScraperGraph
 graph_config = {
     "llm": {
-        "api_key": "AIzaSyDm4fQLnNgKF1UyTg44oU4VredpTFcc7rU",
+        "api_key": "Your_api_key",
         "model": "gemini-pro",
     },
     "embedding_model": {
         "name": "google",
-        "api_key": "AIzaSyDm4fQLnNgKF1UyTg44oU4VredpTFcc7rU"
+        "api_key": "Your_api_key"
     },
     "verbose": True
 }
