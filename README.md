@@ -1,40 +1,74 @@
-# AI Powered Web Scraping: ScrapeGraphAI
+# Smart Scraper App  
 
-ScrapeGraphAI is a *web scraping* Python library that leverages LLM (Large Language Models) and direct graph logic to create advanced scraping pipelines for websites and local documents (XML, HTML, JSON, etc.). This library allows for seamless integration with various LLMs through APIs, such as **OpenAI**, **Groq**, **Azure**, and **Gemini**, or local models using **Ollama**.
+This repository leverages **Large Language Models (LLMs)** and direct graph logic to create advanced scraping pipelines for websites and local documents (XML, HTML, JSON, etc.). The app provides seamless integration with various LLMs via APIs, including OpenAI, Groq, Azure, and Gemini, as well as support for local models using **Ollama**.  
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/VinciGit00/Scrapegraph-ai/main/docs/assets/scrapegraphai_logo.png" alt="Scrapegraph-ai Logo" style="width: 50%;">
-</p>
+## Key Features  
+- **Multi-Language Support**: Integrates Python's `translate` library, allowing users to translate scraped data into their preferred language.  
+- **LLM Integration**: Compatible with LLMs like OpenAI, Groq, Azure, and Gemini through API connections or local models using `ollama`.  
+- **Custom Scraping Pipelines**: Enables dynamic and precise scraping with support for JSON, HTML, and XML formats.  
+- **User-Friendly Interface**: Built using **Streamlit** for an intuitive and responsive user experience.  
+- **Output Flexibility**: Provides results in JSON format, ready for further analysis or download.  
 
-## Key Features
-- **API Integration:** I have integrated ScapeGraphAI with various LLMs using APIs, enabling users to easily connect with powerful models such as **OpenAI**, **Groq**, **Azure**, and **Gemini**.
-- **Local Model Support:** I have added support for local models, allowing users to seamlessly integrate and utilize local models for web scraping tasks.
-- **Optimized Web Scraping:** Using IPyWidgets, I have developed functions that optimize the web scraping process. Users can specify the number of websites to scrape, input URLs, and provide a prompt to get tailored outputs.
-- **Multi-Language Support:** By integrating Python's translate library into the scraping pipeline, I have enabled multi-language support. Users can choose to translate the scraped data into their preferred language, with the output provided in JSON format.
+## File Structure  
+```
+├── app.py # Main application file for Streamlit
+├── Dockerfile # Docker configuration for deployment
+├── requirements.txt # Python dependencies
+├── Translatory_UpgradeD_Myscapegraph_Deployment.ipynb # Jupyter notebook with core logic
+├── .gitattributes # Git settings
+├── README.md # Repository documentation (this file)
+```
 
-## Case Study: SmartScraper using Local Models
+## Getting Started  
 
-To utilize local models, ensure you have [Ollama](https://ollama.com/) installed and download the necessary models using the `ollama pull` command.
+### Prerequisites  
+- Python 3.10+  
+- Docker (optional for containerized deployment)  
+- Ollama (for local model usage)  
 
-## User Integration and Optimization
+### Installation  
+1. Clone the repository:  
+   ``` 
+   git clone https://github.com/ayushadarsh7/AI-Powered-Web-Scrapping.git 
+   cd AI-Powered-Web-Scraping ```
+   
+### Install dependencies:
+```
+pip install -r requirements.txt
+```
+### Install Playwright and its browsers:
+```
+playwright install  
+```
+### Running the App:
+```
+streamlit run app.py  
+```
+## Usage
+* Enter the number of sources and their URLs in the provided fields.
+* Input the prompt for scraping. Optionally, enable the "Translate Prompt" feature to translate it into English from your preferred language.
+* Run the scraper to process the sources, and download the results in JSON format.
 
-### IPyWidgets for Web Scraping Optimization
+## Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests to enhance the functionality.
 
-To facilitate a user-friendly and efficient web scraping experience, I have integrated IPyWidgets into the ScrapeGraphAI library. This integration allows users to interact with the scraping tool through a graphical interface. Users can specify:
-- **The number of websites they wish to scrape:** This feature helps in managing the scope of the scraping task, ensuring that users can scale their scraping efforts according to their needs.
-- **Input URLs:** Users can easily input multiple URLs from which data needs to be scraped. This flexibility ensures that diverse sources can be targeted within a single scraping session.
-- **Provide a prompt:** Users can enter a specific prompt that guides the scraping process, ensuring that the output is relevant and tailored to their requirements.
+## Requirements  
 
-The generated output, based on the given prompt, will be efficiently produced and displayed to the user, enhancing the overall usability and effectiveness of the web scraping process.
+### Software  
+- **Python**: Version 3.10 or higher  
+- **Docker**: (Optional)  
+- **Ollama**: (Optional)  
 
-### Multi-Language Translation
+### Python Libraries  
+- `streamlit==1.31.0`  
+- `scrapegraphai==0.1.0`  
+- `translate==3.6.1`  
+- `playwright==1.41.0`  
+- `nest-asyncio==1.5.8`  
+- `aiohttp==3.9.1`  
+- `asyncio==3.4.3`  
 
-To cater to a global audience, I have integrated Python's translate library into the ScrapeGraphAI pipeline. This feature enables users to:
-- Opt for translation of the scraped data into their preferred language: By selecting the translation option, users can choose the target language for the output.
-- Receive results in JSON format: The translated output will be provided in JSON format, ensuring that the data is structured, easy to understand, and can be readily used for further analysis or integration into other applications.
-
-This multi-language support ensures that ScrapeGraphAI can be effectively used by non-English speakers and in multilingual environments, making the tool more versatile and accessible.
-
-## Conclusion
-
-ScrapeGraphAI empowers users with advanced web scraping capabilities, integrating powerful LLMs and optimization tools to deliver precise and customizable scraping solutions. Whether you are using APIs or local models, ScrapeGraphAI ensures efficient and multilingual data extraction for a wide range of applications.
+### Additional Setup  
+- **Playwright Browsers**:  
+  ```bash  
+  playwright install  
